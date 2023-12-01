@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<!--
+    <etiqueta atributo="valor">
+        contenido
+    </etiqueta> 
+    <meta >  proporciona información sobre la página web que no se muestra directamente en la interfaz de usuario 
+    charset="...": Especifica la codificación de caracteres 
+    name="description" content="..." descripción del contenido de la página
+
+    atributos comunes:
+    id: identificador de etiqueta
+    class: clase de etiqueta relacionada con estilos
+    lang: idioma del contenido
+    translate: indica si el contenido es traducible o no
+    title: mensaje emergente que muestra el título del elemento al pasar el puntero de mouse
+    data-*: metadatos de etiqueta
+    accesskey: combinación de teclas que puede pulsar el usuario para activar el elemento
+    dir: dirección del texto (lefttoright– righttoleft)
+    style: aplicar propiedades de CSS de forma directa al elemento.
+
+    <body> es el cuerpo / todo lo visible
+    <head> se utiliza para contener metadatos y enlaces a recursos externos que son importantes para la página
+    <header> cabecera o encabezado del cuerpo de la página
+-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="descipcion" content="ejemplo">
+        <meta name="keywords" content="web, aplicaciones">   
+        <title>Mi pagina</title>
+    </head>
+    <body>
+        <!--cabecera-->
+        <header>
+            <h1>Mi pagina</h1>
+        </header>   
+        <!--barra de navegacion-->
+        <nav>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
+        </nav>
+        <!--contenido-->
+        <p>Este es un texto de muestra</p>
+        <!--Textos: titulos, parrafos, citas, formularios, tablas-->
+        <hgroup>
+            <h1>Texto en h1</h1>
+            <h2>Texto en h2</h2>
+            <h3>Texto en h3</h3>
+            <h4>Texto en h4</h4>
+            <h5>Texto en h5</h5>
+            <h6>Texto en h6</h6>
+        </hgroup>
+        <p>
+            <mark>Lorem ipsum dolor </mark> sit <small>amet</small> consectetur adipisicing elit. <cite>ad nostrum voluptates</cite>  enim modi? Accusamus, <em> assumenda! Cumque ut officiis </em>, cum temporibus illo, dolorem sunt sequi repellat hic recusandae vero eaque?
+        </p>
+        <p>
+            <b>Lorem ipsum</b> dolor sit, amet <strong> adipisicing</strong>  elit. Praesentium <i>nulla</i> deserunt vitae quos nihil itaque veritatis necessitatibus at laboriosam corrupti tenetur, modi ea commodi sunt atque? Itaque, laudantium. Odit, et!
+        </p>
+
+        <!--barra de navegacion-->
+        <aside>Noticias</aside>
+        <!--informacion general-->
+        <p>
+            <u>Lorem ipsum </u>dolor sit amet consectetur, adipisicing elit. <code>Natus ipsa vero, vel soluta excepturi </code> eum tenetur <span>id autem deserunt esse </span> quidem debitis, possimus dolore quisquam cupiditate, earum ab laboriosam et!
+        </p>
+        <!--tablas-->
+        <h2>Tablas</h2>
+        <table border="1">
+            <caption>Estudiantes</caption>
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Jeniffer</td>
+                    <td>Ichau</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Camilo</td>
+                    <td>Jacome</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Perez</td>
+                    <td>24</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>TOTAL</th>
+            </tfoot>
+        </table>
+        <!--formularios-->
+        <h2>Formularios</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="" id="nombre"><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="" id="apellido"><br>
+            <label for="correo">Correo:</label>
+            <input type="text" name="" id="correo"><br>
+            <label for="edad">Edad:</label>
+            <input type="radio" name="sexo" id="varon">Varon
+            <input type="radio" name="sexo" id="mujer">Mujer
+            <select name="carrera" id="carrera">
+                <option value="ingenieria">Ingenieria en Sistemas</option>
+                <option value="ingenieria">Administracion</option>
+                <option value="ingenieria">Contabilidad</option>
+            </select><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha"><br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass"><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+        <!--enlaces-->
+        <h2>Enlaces</h2>
+        <a name="destino">Texto de enlace</a>
+        <a href="https://fis.epn.edu.ec/" title="Facultad de Sistemas" alt="Texto alternativo" target="_blank">FIS</a>
+        <!--listas-->
+        <h2>Listas</h2>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ol>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!--multimedia-->
+        <h2>Multimedia</h2>
+        <img src="mifoto.jpg" title="Imagen de web" alt="Texto 2" width="120px" height="90px">
+        <br>
+        <br>
+        <img title="Girasoles" width="100" src="https://static.vecteezy.com/system/resources/previews/009/667/946/original/sunflower-bouquet-art-painting-free-png.png">
+
+        <!--pie-->
+        <footer>
+            <h2>Pie de pagina</h2>
+            Derechos reservados
+            <address>Quito - Ecuador</address>
+            &copy;
+        </footer>
+    </body>
+</html>
